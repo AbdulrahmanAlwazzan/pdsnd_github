@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+Bikeshare __2019-15-11__
+README file __2019-8-12__
 
 ### Project Title
-Replace the Project Title
-
+__Bikeshare__
 ### Description
-Describe what your project is about and what it does
+This project will give you descriptive statics from bike share system for three cities in the _United States_ "__Chicago__, __New York City__, __Washington__" by using __python__
 
 ### Files used
-Include the files used
+- chicago.csv
+- new_york_city.csv
+- washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+[Motivate](https://www.motivateco.com/)
