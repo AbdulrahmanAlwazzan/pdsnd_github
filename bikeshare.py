@@ -188,7 +188,7 @@ def user_stats(df):
 
 def display_data(df):
 
-    raw_data = input("\nDo you want to see raw data? Enter yes or no. \n")
+    raw_data = input("\nWould you like to see raw data? Please enter \"yes\" or \"no\". \n")
     n = 0
     if raw_data.lower() == 'yes':
         check = True
@@ -197,7 +197,7 @@ def display_data(df):
             if raw_data.lower() == 'yes':
                 print(df.iloc[n:n+5,:9])
                 n+=5
-                raw_data = input("\nDo you want to see more 5 lines of raw data? Enter yes or no. \n")
+                raw_data = input("\nWould you like to see more 5 lines of raw data? Please enter \"yes\" or \"no\". \n")
             else:
                 check = False
 
