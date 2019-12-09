@@ -32,8 +32,16 @@ def get_filters():
 
 
     # TO DO: get user input for month (all, january, february, ... , june)
+<<<<<<< HEAD
     month = input("Wich month you want to filter with: january , february , march , april ,may ,june or \'all'? ")
 
+||||||| parent of 23377f4... refactor print statments
+    month = input("Wich month you want: january , february , march , april ,may ,june or \'all'? ")
+    
+=======
+    month = input("Wich month you want: january , february , march , april ,may ,june or \'all'? ")
+
+>>>>>>> 23377f4... refactor print statments
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input("Witch day you want to filter with?: ")
@@ -92,7 +100,7 @@ def time_stats(df):
 
 
     # TO DO: display the most common start hour
-    print("The most common start hour is: "+str(df['hour'].mode()[0]))
+    print("The most common start hour is: {}".format(df['hour'].mode()[0]))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -129,12 +137,20 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    print("The total travel time : "+str(df['Trip Duration'].sum()))
+    print("The total travel time : {}".format(df['Trip Duration'].sum()))
 
 
     # TO DO: display mean travel time
+<<<<<<< HEAD
     print("The mean of travel time : "+str(df['Trip Duration'].mean()))
 
+||||||| parent of 23377f4... refactor print statments
+    print("The mean of travel time : "+str(df['Trip Duration'].mean()))
+    
+=======
+    print("The mean of travel time : {}".format(df['Trip Duration'].mean()))
+
+>>>>>>> 23377f4... refactor print statments
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -160,9 +176,9 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
     try:
-        print("The earliest year of birth : "+str(df['Birth Year'].min()))
-        print("The most recent year of birth : "+str(df['Birth Year'].max()))
-        print("The most common year of birth : "+str(df['Birth Year'].mode()[0]))
+        print("The earliest year of birth : {}".format(df['Birth Year'].min()))
+        print("The most recent year of birth : {}".format(df['Birth Year'].max()))
+        print("The most common year of birth : {}".format(df['Birth Year'].mode()[0]))
     except:
           print('No data available')
 
